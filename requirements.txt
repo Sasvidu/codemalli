@@ -1,0 +1,9 @@
+gradio
+faster-whisper
+gtts
+transformers
+torch
+sentencepiece
+accelerate
+datasets
+scipy
