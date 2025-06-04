@@ -31,8 +31,8 @@ def transcribe_and_teach(audio):
     # Generate explanation
     try:
         print("[INFO] Generating explanation...")
-        # ai_explanation = generate_explanation(transcription)
-        ai_explanation = "Hello!"
+        ai_explanation = generate_explanation(transcription)
+        # ai_explanation = "Hello!"
         print(f"[INFO] Explanation generated: {ai_explanation}")
     except Exception as e:
         print(f"[ERROR] Explanation generation failed: {e}")
