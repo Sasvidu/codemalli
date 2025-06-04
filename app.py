@@ -45,6 +45,7 @@ def transcribe_and_teach(audio):
         filename = f"audio/{uuid.uuid4()}.mp3"
         tts.save(filename)
         print(f"[INFO] Audio saved as: {filename}")
+        print("All Done!")
     except Exception as e:
         print(f"[ERROR] TTS failed: {e}")
         filename = None
