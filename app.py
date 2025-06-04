@@ -38,14 +38,28 @@ def transcribe_and_teach(audio):
         print(f"[ERROR] Explanation generation failed: {e}")
         ai_explanation = "Oops! Couldn't generate explanation."
 
+# Translate if Sinhala detected (placeholder)
+    if lang == "si":
+        try:
+            print("[INFO] Translating explanation to Sinhala (placeholder)...")
+            translated_text, tts_lang = translate_en_to_si(ai_explanation_en)
+            print(f"[INFO] Placeholder translation output: {translated_text}, lang: {tts_lang}")
+            final_explanation = translated_text
+        except Exception as e:
+            print(f"[ERROR] Translation failed: {e}")
+            final_explanation = ai_explanation_en
+            tts_lang = "en"
+    else:
+        final_explanation = ai_explanation_en
+        tts_lang = "en"
+
     # Generate audio response
     try:
         print("[INFO] Converting to speech...")
-        tts = gTTS(text=ai_explanation, lang="en")
+        tts = gTTS(text=final_explanation, lang=tts_lang)
         filename = f"audio/{uuid.uuid4()}.mp3"
         tts.save(filename)
         print(f"[INFO] Audio saved as: {filename}")
-        print("All Done!")
     except Exception as e:
         print(f"[ERROR] TTS failed: {e}")
         filename = None
