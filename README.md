@@ -1,6 +1,4 @@
-# CodeMalli — Bilingual AI Tech Tutor for Sri Lankan Students
-
-**Project for Intel Student Ambassador Program**
+# CodeMalli — Bilingual AI Tech Tutor for Sri Lankan Students]
 
 ---
 
