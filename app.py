@@ -6,7 +6,7 @@ import os
 import uuid
 import os
 from detect import detect_si_en
-# from generate_explanation import generate_explanation
+from generate_explanation import generate_explanation
 
 # Create audio directory if it doesn't exist
 os.makedirs("audio", exist_ok=True)
