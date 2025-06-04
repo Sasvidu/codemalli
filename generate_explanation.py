@@ -24,7 +24,7 @@ def generate_explanation(question):
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=1500,
+            max_new_tokens=100,
             do_sample=True,
             top_k=50,
             top_p=0.95,

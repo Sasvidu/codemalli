@@ -42,15 +42,15 @@ def transcribe_and_teach(audio):
     if lang == "si":
         try:
             print("[INFO] Translating explanation to Sinhala (placeholder)...")
-            translated_text, tts_lang = translate_en_to_si(ai_explanation_en)
+            translated_text, tts_lang = translate_en_to_si(ai_explanation)
             print(f"[INFO] Placeholder translation output: {translated_text}, lang: {tts_lang}")
             final_explanation = translated_text
         except Exception as e:
             print(f"[ERROR] Translation failed: {e}")
-            final_explanation = ai_explanation_en
+            final_explanation = ai_explanation
             tts_lang = "en"
     else:
-        final_explanation = ai_explanation_en
+        final_explanation = ai_explanation
         tts_lang = "en"
 
     # Generate audio response
