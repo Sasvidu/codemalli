@@ -1,4 +1,4 @@
-# CodeMalli — Bilingual AI Tech Tutor for Sri Lankan Students]
+# CodeMalli — Bilingual AI Tech Tutor for Sri Lankan Students
 
 ---
 
