@@ -38,11 +38,10 @@
 
 ## 🗂 Project Structure
 
-├── app.py # Main application code
-├── audio/ # Folder to store generated TTS audio files
-├── requirements.txt # Python dependencies
-└── README.md # This file
-
+ - app.py # Main application code
+ - audio/ # Folder to store generated TTS audio files
+ - requirements.txt # Python dependencies
+ - README.md # This file
 
 ---
 
