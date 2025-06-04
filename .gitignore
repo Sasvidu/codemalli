@@ -39,3 +39,6 @@ htmlcov/
 # gradio
 .gradio/
 .gradio/flagged
+
+# env
+.env
