@@ -35,3 +35,7 @@ htmlcov/
 
 # Pytest cache
 .pytest_cache/
+
+# gradio
+.gradio/
+.gradio/flagged
