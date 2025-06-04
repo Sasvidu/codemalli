@@ -1,10 +1,11 @@
 import gradio as gr
 from faster_whisper import WhisperModel
 from gtts import gTTS
-from langdetect import detect
+# from langdetect import detect
 import os
 import uuid
 import os
+from detect import detect_si_en
 
 # Create audio directory if it doesn't exist
 os.makedirs("audio", exist_ok=True)
@@ -18,7 +19,7 @@ def transcribe_and_teach(audio):
 
     # Detect language (default to 'unknown' if detection fails)
     try:
-        lang = detect(transcription)
+        lang = detect_si_en(transcription)
     except:
         lang = "unknown"
     
